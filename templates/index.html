@@ -9,16 +9,14 @@
 <body>
     <div class="box">
         {% if result and result.success %}
-            <img alt="success" class="status" onclick="info()" src="{{ url_for('static', filename='images/success.png') }}">
+            <img alt="success" class="status" onclick="info()" src="{{ url_for('static', filename='images/success.png') }}" title="Click for info">
         {% elif result and not result.success %}
-            <img alt="failure" class="status" onclick="info()" src="{{ url_for('static', filename='images/failure.png') }}">
+            <img alt="failure" class="status" onclick="info()" src="{{ url_for('static', filename='images/failure.png') }}" title="Click for info">
         {% endif %}
         <form method="post">
-            <label>
-                <input type="text" name="radio_id"  class="radio_id_entry"
-                placeholder="Enter radio ID"
-                value="{{ request.form['radio_id'] }}">
-            </label>
+            <input type="text" name="radio_id"  class="radio_id_entry"
+            placeholder="Enter radio ID"
+            value="{{ request.form['radio_id'] }}">
             <button type="submit" class="button">Activate</button>
         </form>
         {% if result and result.responses %}

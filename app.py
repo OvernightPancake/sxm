@@ -1,10 +1,11 @@
 import sys
 import requests
-import uuid
+import uuid as uuid_module
 from flask import Flask, request, render_template
 
 
-api = Flask(__name__)
+app = Flask(__name__, static_url_path='', static_folder="./static")
+
 SESSION = requests.session()
 RESPONSES = {
     'activated': {
@@ -275,7 +276,7 @@ def process(device_id: str):
     return results
 
 
-@api.route("/", methods=['GET', 'POST'])
+@app.route("/", methods=['GET', 'POST'])
 def index() -> str:
     test = 'test' in request.args.keys()
 
@@ -313,4 +314,4 @@ if __name__ == '__main__':
         for key, value in process(radio_id_input).items():
             print(f"\n{key}:\n{value}")
     else:
-        api.run()
+        app.run()

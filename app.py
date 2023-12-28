@@ -1,6 +1,6 @@
 import sys
 import requests
-import uuid as uuid_module
+import uuid
 from flask import Flask, request, render_template
 
 

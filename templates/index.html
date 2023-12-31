@@ -9,9 +9,9 @@
 <body>
     <div class="box">
         {% if result and result.success %}
-            <img alt="success" class="status" onclick="info()" src="{{ url_for('static', filename='images/success.png') }}" title="Click for info">
+            <img alt="success" class="status" onclick="info()" src="{{ url_for('static', filename='images/success.svg') }}" title="Click for info">
         {% elif result and not result.success %}
-            <img alt="failure" class="status" onclick="info()" src="{{ url_for('static', filename='images/failure.png') }}" title="Click for info">
+            <img alt="failure" class="status" onclick="info()" src="{{ url_for('static', filename='images/failure.svg') }}" title="Click for info">
         {% endif %}
         <form method="post">
             <input type="text" name="radio_id"  class="radio_id_entry"

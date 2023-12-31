@@ -7,13 +7,13 @@
 @media only screen and (max-device-width: 1024px) {
   div.box,
     div.info {
-    width: 100%;
+    width: 100%
   }
 }
 
 @media only screen and (min-width: 1025px) {
   div.box {
-    width: 300px;
+    width: 300px
   }
 }
 
@@ -22,7 +22,7 @@ div.box {
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  display: block;
+  display: block
 }
 
 img.status {
@@ -33,6 +33,7 @@ img.status {
   display: block;
   height: 9rem;
   width: 9rem;
+  cursor: pointer
 }
 
 input[type="text"] {
@@ -47,7 +48,7 @@ input[type="text"] {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-  text-align: center;
+  text-align: center
 }
 
 button {
@@ -58,27 +59,28 @@ button {
   display: block;
   height: 40px;
   width: 150px;
+  cursor: pointer;
   border-radius: 9999px;
   border-color: transparent;
   --tw-bg-opacity: 1;
-  background-color: rgb(12 100 47 / var(--tw-bg-opacity));
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity))
 }
 
 button:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity))
 }
 
 button:focus {
   --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity))
 }
 
 div#info.info.show {
-  margin-top: 0.75rem;
+  margin-top: 0.75rem
 }
 
 span.response-key {
@@ -88,7 +90,7 @@ span.response-key {
   margin-bottom: 5px;
   display: block;
   width: 75%;
-  font-weight: 700;
+  font-weight: 700
 }
 
 span.response-value {
@@ -97,9 +99,9 @@ span.response-value {
   margin-top: 10px;
   margin-bottom: 5px;
   display: block;
-  width: 75%;
+  width: 75%
 }
 
 .hide {
-  display: none;
+  display: none
 }

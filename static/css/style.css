@@ -4,6 +4,13 @@
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
 
+body, html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto
+}
+
 @media only screen and (max-device-width: 1024px) {
   div.box,
     div.info {
@@ -77,6 +84,18 @@ button:hover {
 button:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity))
+}
+
+span.response-key {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  line-height: 1.5rem
+}
+
+span.response-value {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.875rem;
+  line-height: 1.25rem
 }
 
 div#info.info.show {

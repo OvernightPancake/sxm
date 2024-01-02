@@ -14,3 +14,4 @@ venv.bak/
 static/css/input.css
 tailwind.config.js
 .DS_Store
+*/.DS_Store

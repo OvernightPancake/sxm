@@ -54,8 +54,12 @@ input[type="text"] {
   border-radius: 9999px;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(21 128 61 / var(--tw-border-opacity));
-  text-align: center
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  text-align: center;
+}
+
+.placeholder\:text-black\/50::placeholder{
+  color: rgb(0 0 0 / 0.5)
 }
 
 button {

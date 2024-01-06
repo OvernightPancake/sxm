@@ -15,7 +15,7 @@
             <img alt="failure" class="status" onclick="info()" src="{{ url_for('static', filename='images/failure.svg') }}" title="Click for info">
         {% endif %}
         <form method="post">
-            <input type="text" name="radio_id"  class="radio_id_entry"
+            <input type="text" name="radio_id"  class="radio_id_entry placeholder:text-[rgb(21 128 61)]"
             placeholder="Enter radio ID"
             value="{{ request.form['radio_id'] }}">
             <button type="submit" class="button">Activate</button>

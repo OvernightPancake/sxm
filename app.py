@@ -16,7 +16,7 @@ RESPONSES = {
     'already_activated': {
         'crm': {'resultCode': 'SUCCESS', 'opstatus': 0, 'httpStatusCode': 200},
         'create': {'resultData': [{'resultCode': 'FAILURE'}, {'code': '11-03-ACCT-1073'},
-                                  {'message': 'Device ID is already active'}], 'opstatus': 0, 'httpStatusCode': 200},
+        {'message': 'Device ID is already active'}], 'opstatus': 0, 'httpStatusCode': 200},
         'refresh': {'opstatus': 0, 'errors': [{'resultCode': 'SUCCESS'}], 'httpStatusCode': 200},
     }
 }

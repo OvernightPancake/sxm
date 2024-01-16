@@ -9,15 +9,15 @@ app = Flask(__name__, static_url_path='', static_folder="./static")
 SESSION = requests.session()
 RESPONSES = {
     'activated': {
-        'crm': {'resultCode': 'SUCCESS', 'opstatus': 0, 'httpStatusCode': 200},
-        'create': {'resultData': [{'resultCode': 'SUCCESS'}], 'opstatus': 0, 'httpStatusCode': 200},
-        'refresh': {'opstatus': 0, 'errors': [{'resultCode': 'SUCCESS'}], 'httpStatusCode': 200},
+        'crm': {'resultCode': 'Activated', 'opstatus': 0, 'httpStatusCode': 200},
+        'create': {'resultData': [{'resultCode': 'Account Created'}], 'opstatus': 0, 'httpStatusCode': 200},
+        'refresh': {'opstatus': 0, 'errors': [{'resultCode': 'Radio Refresh Signal Sent'}], 'httpStatusCode': 200},
     },
     'already_activated': {
-        'crm': {'resultCode': 'SUCCESS', 'opstatus': 0, 'httpStatusCode': 200},
-        'create': {'resultData': [{'resultCode': 'FAILURE'}, {'code': '11-03-ACCT-1073'},
-                                  {'message': 'Device ID is already active'}], 'opstatus': 0, 'httpStatusCode': 200},
-        'refresh': {'opstatus': 0, 'errors': [{'resultCode': 'SUCCESS'}], 'httpStatusCode': 200},
+        'crm': {'resultCode': 'Already Activated', 'opstatus': 0, 'httpStatusCode': 200},
+        'create': {'resultData': [{'resultCode': 'Account Already Exists'}, {'code': '11-03-ACCT-1073'},
+        {'message': 'Device ID is already active'}], 'opstatus': 0, 'httpStatusCode': 200},
+        'refresh': {'opstatus': 0, 'errors': [{'resultCode': 'No Refresh Required'}], 'httpStatusCode': 200},
     }
 }
 

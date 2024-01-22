@@ -1,5 +1,1 @@
-# Deploy on Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frichardk80%2Fvercelsxm)
-
-Note: Vercel Web Analytics is built into this. Just enable it on your Vercel account.
+Fork of https://github.com/richardk80/vercelsxm with Docker file from https://github.com/richardk80/sxm-server. The sxm-server repo should work fine. However I just replaced the files with the vercelsxm ones and kept the docker file from previous versions and everything seemed to work fine.
